@@ -493,6 +493,8 @@ class DinnerSpinner {
         
         this.showNotification('Data exported successfully!', 'success');
     }
+
+
 }
 
 // Add CSS for notifications animation
@@ -525,14 +527,19 @@ let dinnerSpinner;
 document.addEventListener('DOMContentLoaded', () => {
     dinnerSpinner = new DinnerSpinner();
     
-    // Add some sample meals for demo (only if no meals exist)
+    // Add personalized default meals (only if no meals exist)
     if (dinnerSpinner.meals.length === 0) {
         const sampleMeals = [
-            { id: 1, name: "Spaghetti Carbonara", emoji: "🍝", color: "#ff6b6b" },
-            { id: 2, name: "Chicken Tacos", emoji: "🌮", color: "#4ecdc4" },
-            { id: 3, name: "Beef Stir Fry", emoji: "🥘", color: "#45b7d1" },
-            { id: 4, name: "Grilled Salmon", emoji: "🐟", color: "#96ceb4" },
-            { id: 5, name: "Chicken Curry", emoji: "🍛", color: "#ffeaa7" }
+            { id: 1, name: "Grilled Salmon w/ Greens", emoji: "🐟", color: "#ff6b6b" },
+            { id: 2, name: "Chicken Thighs w/ Rice", emoji: "🍚", color: "#4ecdc4" },
+            { id: 3, name: "Scrambled Eggs w/ Salad", emoji: "🍳", color: "#45b7d1" },
+            { id: 4, name: "Pasta w/ Red Sauce", emoji: "🍝", color: "#96ceb4" },
+            { id: 5, name: "Pizza!", emoji: "🍕", color: "#ffeaa7" },
+            { id: 6, name: "Hot Dogs w/ Potatoes", emoji: "🌭", color: "#dda0dd" },
+            { id: 7, name: "Cheese Toast", emoji: "🍞", color: "#98d8c8" },
+            { id: 8, name: "Steak w/ Fries", emoji: "🥩", color: "#f7dc6f" },
+            { id: 9, name: "Tuna Sandwich", emoji: "🥪", color: "#bb8fce" },
+            { id: 10, name: "Cornflakes w/ Milk", emoji: "🥣", color: "#85c1e9" }
         ];
         
         dinnerSpinner.meals = sampleMeals;
