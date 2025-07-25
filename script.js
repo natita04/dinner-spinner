@@ -528,11 +528,77 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add some sample meals for demo (only if no meals exist)
     if (dinnerSpinner.meals.length === 0) {
         const sampleMeals = [
-            { id: 1, name: "Spaghetti Carbonara", emoji: "🍝", color: "#ff6b6b" },
-            { id: 2, name: "Chicken Tacos", emoji: "🌮", color: "#4ecdc4" },
-            { id: 3, name: "Beef Stir Fry", emoji: "🥘", color: "#45b7d1" },
-            { id: 4, name: "Grilled Salmon", emoji: "🐟", color: "#96ceb4" },
-            { id: 5, name: "Chicken Curry", emoji: "🍛", color: "#ffeaa7" }
+[
+    {
+        "id": 4,
+        "name": "Grilled Salmon w/ Greens",
+        "emoji": "🐟",
+        "color": "#ff6b6b"
+    },
+    {
+        "id": 1753476367800,
+        "name": "Chicken Thigs w/ Rice",
+        "dateAdded": "2025-07-25T20:46:07.800Z",
+        "emoji": "🍚",
+        "color": "#4ecdc4"
+    },
+    {
+        "id": 1753476401379,
+        "name": "Scrambled Eggs w/ Salad",
+        "dateAdded": "2025-07-25T20:46:41.379Z",
+        "emoji": "🍳",
+        "color": "#45b7d1"
+    },
+    {
+        "id": 1753476607595,
+        "name": "Pasta w/ Red Sauce",
+        "dateAdded": "2025-07-25T20:50:07.595Z",
+        "emoji": "🍝",
+        "color": "#96ceb4"
+    },
+    {
+        "id": 1753476611572,
+        "name": "Pizza!",
+        "dateAdded": "2025-07-25T20:50:11.572Z",
+        "emoji": "🍕",
+        "color": "#ffeaa7"
+    },
+    {
+        "id": 1753476632048,
+        "name": "Hot Dogs w/ Potatoes",
+        "dateAdded": "2025-07-25T20:50:32.048Z",
+        "emoji": "🍽️",
+        "color": "#dda0dd"
+    },
+    {
+        "id": 1753476639453,
+        "name": "Cheese Toast",
+        "dateAdded": "2025-07-25T20:50:39.453Z",
+        "emoji": "🍞",
+        "color": "#98d8c8"
+    },
+    {
+        "id": 1753476687726,
+        "name": "Steak w/ Fries",
+        "dateAdded": "2025-07-25T20:51:27.726Z",
+        "emoji": "🥩",
+        "color": "#f7dc6f"
+    },
+    {
+        "id": 1753476702227,
+        "name": "Tuna Sandwich",
+        "dateAdded": "2025-07-25T20:51:42.227Z",
+        "emoji": "🐟",
+        "color": "#bb8fce"
+    },
+    {
+        "id": 1753476774169,
+        "name": "Cornflakes w/ Milk",
+        "dateAdded": "2025-07-25T20:52:54.169Z",
+        "emoji": "🍽️",
+        "color": "#85c1e9"
+    }
+]
         ];
         
         dinnerSpinner.meals = sampleMeals;
