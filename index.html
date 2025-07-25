@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's for Dinner? - Spinner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-utensils"></i> What's for Dinner?</h1>
+            <p>Let fate decide your next delicious meal!</p>
+        </header>
+
+        <main>
+            <!-- Meal Input Section -->
+            <section class="meal-input-section">
+                <div class="input-group">
+                    <input type="text" id="mealInput" placeholder="Enter a meal idea..." maxlength="50">
+                    <button id="addMealBtn" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Add Meal
+                    </button>
+                </div>
+                
+
+            </section>
+
+            <!-- Meals List -->
+            <section class="meals-section">
+                <h2>Your Meal Options <span class="meal-count">(0)</span></h2>
+                <div class="meals-grid" id="mealsGrid">
+                    <!-- Meals will be dynamically added here -->
+                </div>
+                <div class="empty-state" id="emptyState">
+                    <i class="fas fa-bowl-food"></i>
+                    <p>No meals added yet. Start by adding your favorite dishes!</p>
+                </div>
+            </section>
+
+            <!-- Spinner Section -->
+            <section class="spinner-section">
+                <div class="spinner-container">
+                    <div class="spinner" id="spinner">
+                        <div class="spinner-arrow"></div>
+                        <div class="spinner-wheel" id="spinnerWheel">
+                            <!-- Meal segments will be dynamically generated -->
+                        </div>
+                        <div class="spinner-center">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="spinner-controls">
+                    <button id="spinBtn" class="btn btn-spin" disabled>
+                        <i class="fas fa-play"></i> Spin the Wheel!
+                    </button>
+                    <button id="spinAgainBtn" class="btn btn-secondary" style="display: none;">
+                        <i class="fas fa-redo"></i> Spin Again
+                    </button>
+                </div>
+            </section>
+
+            <!-- Result Section -->
+            <section class="result-section" id="resultSection" style="display: none;">
+                <div class="result-card">
+                    <h2>🎉 Tonight's Dinner:</h2>
+                    <div class="selected-meal" id="selectedMeal"></div>
+                    <div class="result-actions">
+                        <button id="getRecipeBtn" class="btn btn-primary">
+                            <i class="fas fa-book-open"></i> Find Recipe
+                        </button>
+                        <button id="addToHistoryBtn" class="btn btn-secondary">
+                            <i class="fas fa-history"></i> Add to History
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- History Section -->
+            <section class="history-section">
+                <h2>Meal History</h2>
+                <div class="history-list" id="historyList">
+                    <p class="empty-history">No meals in history yet.</p>
+                </div>
+                <button id="clearHistoryBtn" class="btn btn-danger" style="display: none;">
+                    <i class="fas fa-trash"></i> Clear History
+                </button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
